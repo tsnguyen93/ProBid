@@ -37,6 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pro',
+    'user',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -100,3 +102,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#When you push to the server just comment the STATICFILES_DIRS and uncomment the STATIC_ROOT
+
+#STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    '/Users/cfaw/TheCreativeTruth/blog/static',
+]
