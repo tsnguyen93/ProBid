@@ -8,6 +8,6 @@ def home(request):
     context = RequestContext(request)
     return render(
         request,
-        '../../ProBid/templates/user/userhome.html',
+        '../../ProBid/templates/templates/user/userhome.html',
         context
     )

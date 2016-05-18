@@ -8,6 +8,6 @@ def home(request):
     context = RequestContext(request)
     return render(
         request,
-        '../../ProBid/templates/pro/prohome.html',
+        'pro/prohome.html',
         context
     )
