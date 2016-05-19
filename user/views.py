@@ -8,6 +8,16 @@ def home(request):
     context = RequestContext(request)
     return render(
         request,
-        '../../ProBid/templates/templates/user/userhome.html',
+        'user/userhome.html',
+        context
+    )
+
+def login(request):
+    assert isinstance(request, HttpRequest)
+
+    context = RequestContext(request)
+    return render(
+        request,
+        'user/login.html',
         context
     )
