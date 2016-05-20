@@ -1,14 +1,282 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="{% static 'pro/css/index.css' %}" rel="stylesheet">
-</head>
-<body>
-This is the dashboard page for professionals to see tasks that they can bid on.
+<html>
+  <head>
+    <title>Pro Bids User Home</title>
+	<link href="{% static 'pro/css/prodash.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  </head>
+  <body>
 
-<script src="{% static 'user/js/index.js' %}"></script>
-</body>
+    <div class="container-fluid">
+
+      <div class="jumbotron">
+        <h1>ProBids</h1>
+        <p> These are just a few services . . . </p>
+      </div>
+
+	  <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand" href="index.html">ProBids</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse myNavbar">
+
+				<ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="#">Order History</a>
+                    </li>
+                    <li>
+                        <a href="#">Today's Deals</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+
+			  <div class="col-sm-3 col-md-3">
+					<form class="navbar-form navbar-left" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search Jobs" name="srch-term" id="srch-term">
+							<div class="input-group-btn">
+							<button class="btn btn-success" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+							</div>
+						</div>
+					</form>
+		      </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">My Account</a>
+                    </li>
+					 <li>
+                        <a href="#">Register</a>
+                    </li>
+                    <li>
+                        <a href="#">Jobs</a>
+                    </li>
+                    <li>
+                        <a href="#">Cart</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+       </div>
+        <!-- /.container -->
+	  </nav>
+
+      <div class="row">
+
+        <div class="col-md-2">
+          <div class="panel panel-default">
+            <div class="panel-body">
+
+			  <h4>Availability</h4>
+              <ul class="list-group">
+              <li class="list-group-item">
+                Calendar
+              </li>
+                <div class="checkbox list-group-item">
+					<label><input type="checkbox" value="Hours">Hours</label>
+				</div>
+              </ul>
+
+              <h4>Categories</h4>
+              <ul class="list-group">
+                <div class="checkbox list-group-item">
+					<label><input type="checkbox" value="Hours">Cars</label>
+				</div>
+
+				<div class="checkbox list-group-item">
+					<label><input type="checkbox" value="Hours">Heating and Cooling</label>
+				</div>
+
+				<div class="checkbox list-group-item">
+					<label><input type="checkbox" value="Hours">Electric</label>
+				</div>
+
+				<div class="checkbox list-group-item">
+					<label><input type="checkbox" value="Hours">Plumbing</label>
+				</div>
+			  <div class="form-group">
+                  <select id="type" class="form-control">
+                      <option value="animals">Show All</option>
+                      <option value="food">More stuff</option>
+                      <option value="movie">Dynamic HTML</option>
+					  <option value="movie">Populate from database</option>
+                  </select>
+              </div>
+              </ul>
+
+			  <h4>Company</h4>
+              <ul class="list-group">
+                <div class="checkbox list-group-item">
+					<label><input type="checkbox" value="Hours">Boats and Hoes</label>
+				</div>
+
+				<div class="checkbox list-group-item">
+					<label><input type="checkbox" value="Hours">Leafs by Snoop</label>
+				</div>
+
+				<div class="checkbox list-group-item">
+					<label><input type="checkbox" value="Hours">FYN LABS</label>
+				</div>
+
+			  <div class="form-group">
+                  <select id="type" class="form-control">
+                      <option value="animals">Show All</option>
+                      <option value="food">More stuff</option>
+                      <option value="movie">Dynamic HTML</option>
+					  <option value="movie">Populate from database</option>
+                  </select>
+              </div>
+              </ul>
+
+			  <h4>Location</h4>
+              <ul class="list-group">
+                <div class="checkbox list-group-item">
+					<label><input type="checkbox" value="Hours">Somewhere In Kansas . . .</label>
+				</div>
+
+				<div class="checkbox list-group-item">
+					<label><input type="checkbox" value="Hours">State/City/Zip</label>
+				</div>
+
+				<div class="checkbox list-group-item">
+					<label><input type="checkbox" value="Hours">Nested Dropdown or search field</label>
+				</div>
+
+			  <div class="form-group">
+                  <select id="type" class="form-control">
+                      <option value="animals">Show All</option>
+                      <option value="food">More stuff</option>
+                      <option value="movie">Dynamic HTML</option>
+					  <option value="movie">Populate from database</option>
+                  </select>
+              </div>
+              </ul>
+
+			  <div style="text-align:center;">
+			  	    <h4>Avg. User Reviews</h4>
+					<p><a href="" style="text-decoration:none;"><i class='glyphicon glyphicon-star'></i><i class='glyphicon glyphicon-star'></i><i class='glyphicon glyphicon-star'></i><i class='glyphicon glyphicon-star'></i><i class='glyphicon glyphicon-star-empty'></i> <span> & Up </span></a></p>
+					<p><a href="" style="text-decoration:none;"><i class='glyphicon glyphicon-star'></i><i class='glyphicon glyphicon-star'></i><i class='glyphicon glyphicon-star'></i><i class='glyphicon glyphicon-star-empty'></i><i class='glyphicon glyphicon-star-empty'></i> <span> & Up </span></a></p>
+					<p><a href="" style="text-decoration:none;"><i class='glyphicon glyphicon-star'></i><i class='glyphicon glyphicon-star'></i><i class='glyphicon glyphicon-star-empty'></i><i class='glyphicon glyphicon-star-empty'></i><i class='glyphicon glyphicon-star-empty'></i> <span> & Up </span></a></p>
+					<p><a href="" style="text-decoration:none;"><i class='glyphicon glyphicon-star'></i><i class='glyphicon glyphicon-star-empty'></i><i class='glyphicon glyphicon-star-empty'></i><i class='glyphicon glyphicon-star-empty'></i><i class='glyphicon glyphicon-star-empty'></i> <span> & Up </span></a></p>
+			  </div>
+
+			</div>
+		  </div>
+		</div>
+
+		<div class="col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            <h2 class="panel-title">Filtered Companies</h2>
+            </div>
+
+            <div class="list-group">
+              <li class="list-group-item ListSize"></li>
+            </div>
+          </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Info</h2>
+              </div>
+              <ul class="list-group favorites-list">
+                <li class="list-group-item">Info</li>
+              </ul>
+            </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                <h2 class="panel-title">Details</h2>
+              </div>
+                <ul class="list-group favorites-list">
+                  <li class="list-group-item">Details</li>
+                </ul>
+              </div>
+          </div>
+
+        <div class="col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            <h2 class="panel-title">Hot Companies</h2>
+            </div>
+
+            <div class="list-group">
+              <li class="list-group-item ListSize"></li>
+            </div>
+          </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Info</h2>
+              </div>
+              <ul class="list-group favorites-list">
+                <li class="list-group-item">Info</li>
+              </ul>
+            </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                <h2 class="panel-title">Details</h2>
+              </div>
+                <ul class="list-group favorites-list">
+                  <li class="list-group-item">Details</li>
+                </ul>
+              </div>
+          </div>
+
+		  <div class="col-md-2">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            <h2 class="panel-title">My Job Bucket</h2>
+            </div>
+
+            <div class="list-group">
+              <li class="list-group-item ListSize"></li>
+            </div>
+          </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Info</h2>
+              </div>
+              <ul class="list-group favorites-list">
+                <li class="list-group-item">Info</li>
+              </ul>
+            </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                <h2 class="panel-title">Details</h2>
+              </div>
+                <ul class="list-group favorites-list">
+                  <li class="list-group-item">Details</li>
+                </ul>
+              </div>
+          </div>
+
+		  <div class="col-md-2">
+			<div class="panel panel-default">
+				<div class="panel-body">
+
+					<h4>Additional Panels?</h4>
+					<h4>Progress/Realtime?</h4>
+					<h4>Analytics Stuff?</h4>
+
+				</div>
+			</div>
+		  </div>
+
+		</div>
+
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="{% static 'pro/js/pro.js' %}"></script>
+  </body>
 </html>
