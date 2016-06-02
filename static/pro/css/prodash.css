@@ -1,3 +1,21 @@
 .ListSize{
 	Height: 400px;
 }
+
+.task-img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.job-icon {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.border-right {
+    border-right: 1px solid black;
+}
+
+.job-card {
+    height: 70px;
+}
